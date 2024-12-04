@@ -37,7 +37,9 @@ app.use("/api/message", Message);
 app.use("/api/quote", Quote);
 
 
-
+app.get("/test", (req, res) => {
+    res.json({message: "server is running"});
+  });
 
 
 
